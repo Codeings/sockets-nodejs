@@ -36,3 +36,8 @@ io.on('connection', function(socket){
     });
 
 });
+ 
+/*imprimir por consola*/
+server.listen(8080, function(data) {  
+    //console.log('Servidor corriendo en http://localhost:8080', data);
+});
