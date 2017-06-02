@@ -6,8 +6,8 @@ var io = require('socket.io')(server);
 
 var messages = [{
 id: 1,
-text: "hola soy un mensaje",
-autor: "Erick"
+text: "hola soy un mensaje2",
+autor: "Erick2"
 }]
 
 /*definir la carpeta estatica y publica que se va a utilizar para las vistas*/
