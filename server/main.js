@@ -1,5 +1,5 @@
-express = require('express');  
 
+var express = require('express');
 var app = express();  
 var server = require('http').Server(app);  
 var io = require('socket.io')(server);  
@@ -40,3 +40,4 @@ io.on('connection', function(socket){
 server.listen(8080, function(data) {  
     //console.log('Servidor corriendo en http://localhost:8080', data);
 });
+
