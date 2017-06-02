@@ -6,7 +6,7 @@ var io = require('socket.io')(server);
 
 var messages = [{
 id: 1,
-text: "hola soy un mensaje2",
+text: "hola soy un mensaje",
 autor: "Erick"
 }]
 
