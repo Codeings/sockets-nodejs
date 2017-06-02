@@ -36,22 +36,3 @@ io.on('connection', function(socket){
     });
 
 });
- 
-/*imprimir por consola*/
-server.listen(8080, function(data) {  
-    //console.log('Servidor corriendo en http://localhost:8080', data);
-});
-
-var nodemon = require('nodemon');
-
-nodemon({ script: 'app.js' }).on('start', function () {
-  console.log('nodemon started');
-}).on('crash', function () {
-  console.log('script crashed for some reason');
-});
-
-// force a restart
-nodemon.emit('restart');
-
-// force a quit
-nodemon.emit('quit');
