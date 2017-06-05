@@ -1,8 +1,8 @@
 
 var express = require('express');
-var app = express();  
-var server = require('http').Server(app);  
-var io = require('socket.io')(server);  
+var app = express();
+var server = require('http').Server(app);
+var io = require('socket.io')(server);
 
 var messages = [{
 id: 1,
@@ -17,7 +17,6 @@ app.use(express.static('public'));
 app.get('/', function(req, res){
 res.status(200).send('hola mundo cambiado');
 });
-
 
 /*escuchar el puerto*/
 io.on('connection', function(socket){
@@ -35,8 +34,8 @@ io.on('connection', function(socket){
     });
 
 });
- 
+
 /*imprimir por consola*/
-server.listen(8080, function(data) {  
+server.listen(8080, function(data) {
     //console.log('Servidor corriendo en http://localhost:8080', data);
 });
